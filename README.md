@@ -4,7 +4,7 @@
 
 This Bash script creates a compressed backup of files modified within the last 24 hours from a specified target directory and moves the backup to a specified destination directory. It ensures valid input and directory paths. Additionally, the script can be scheduled to run automatically using cron jobs.
 
-### Steps
+### Steps:
 1. Check Arguments: Verify that exactly two arguments (target and destination directories) are provided.
 
 2. Validate Directories: Ensure both arguments are valid directory paths.
@@ -46,10 +46,10 @@ crontab -e
 
 Add a Cron Job:
 ```bash
-0 2 * * * /path/to/backup.sh /path/to/target_directory /path/to/destination_directory
+0 2 * * * /path/to/backup.sh target_directory destination_directory
 ```
 - This example schedules the script to run daily at 2 AM.
-- Replace /path/to/backup.sh, /path/to/target_directory, and /path/to/destination_directory with actual paths.
+- Replace /path/to/backup.sh, target_directory, and destination_directory with actual paths.
 
 
 
