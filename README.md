@@ -34,8 +34,8 @@ Run the Script:
 ```bash
 ./backup.sh target_directory_name destination_directory_name
 ```
-target_directory_name: The directory containing files to back up.
-destination_directory_name: The directory to store the backup file.
+- target_directory_name: The directory containing files to back up.
+- destination_directory_name: The directory to store the backup file.
 
 ### Scheduling the Script with Cron
 
@@ -48,8 +48,8 @@ Add a Cron Job:
 ```bash
 0 2 * * * /path/to/backup.sh /path/to/target_directory /path/to/destination_directory
 ```
-This example schedules the script to run daily at 2 AM.
-Replace /path/to/backup.sh, /path/to/target_directory, and /path/to/destination_directory with actual paths.
+- This example schedules the script to run daily at 2 AM.
+- Replace /path/to/backup.sh, /path/to/target_directory, and /path/to/destination_directory with actual paths.
 
 
 
